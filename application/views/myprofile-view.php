@@ -115,7 +115,7 @@
     </div>
     </div>
 
-    <div class="d-flex flex-column justify-content-center" style="background-color:#a71ebf"> 
+    <div class="d-flex flex-column justify-content-center" style="background-color: #a71ebf"> 
         <div class="container-fluid my-4 px-xl-5 py-5">
             <h2 class="fs-1 text-center fw-bold text-decoration-underline pb-4" id="contact">
                 Contact me
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer" style="color: inherit;">
+ 
                     <div class ="bloc_1 text-center pt-3">
                         <div class="fs-2 text-center pt-3">
                             <img src="<?php echo base_url('assets/ico/telephone.svg');?>" alt="" width="80vw" style="filter: invert(100%)">
@@ -150,8 +150,8 @@
                             Undisclosed
                         </div>
                     </div>
-                </a>
-                <a href="http://" target="_blank" rel="noopener noreferrer" style="color: inherit;">
+             
+
                     <div class ="bloc_2 text-center pt-3">
                         <div class="fs-2 text-center pt-3">
                             <img src="<?php echo base_url('assets/ico/house.svg');?>" alt="" width="80vw" style="filter: invert(100%)">
@@ -160,7 +160,7 @@
                             Undisclosed
                         </div>
                     </div>
-                </a>
+
             </div>
         </div>
     </div>
@@ -197,7 +197,7 @@ base_url('assets/js/bootstrap.min.js');?>">
     $('.navbar-collapse a').click(function(){
         $(".navbar-collapse").collapse('hide');
     });
-    
+
     $(document).click(function (event) {
     var clickover = $(event.target);
     var $navbar = $(".navbar-collapse");               
