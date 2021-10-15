@@ -25,6 +25,7 @@ class MyProfile extends CI_Controller{
             "Meow Book is an app that allow you to find, review, search, and read book and novel from Android or iOS. this app built using Flutter", 
             "Penjualan Sederhana is an app that inspire from complex Point-of-Sales (POS) and we built this with simplicity in mind. this app built using Visual Basic .NET and Ms. Access",
             "Simple Student Management is an app that to manage student data, using simple (near nonexistent) UI and with help Ms. Access database for ease use. this app built using Visual Basic .NET and Ms. Access");
+        $data["email"] = "farhan.kzsr23@gmail.com";
         $this->load->view('myprofile-view',$data);
     }
 }

@@ -73,7 +73,7 @@
             ?>
             <div class="container-fluid d-flex flex-xl-row justify-content-xl-between flex-column my-xl-5 my-md-4 my-s-5 px-5 border-bottom" style="padding: 0 5vw 0 5vw">
                 <div class ="bloc_1 text-center mx-5 py-5">
-                    <img src="<?php echo base_url('assets/img/'.$i.'.jpg' );?>" class="img-thumbnail" alt="" width="220px">
+                    <img src="<?php echo base_url('assets/img/'.$i.'.jpg' );?>" class="img-fluid" alt="" width="220px">
                 </div>
                 <div class="bloc_2 my-s-3">
                     <h2 class="fs-2 text-center pt-3">
@@ -91,12 +91,14 @@
             </div>
             <?php } else{?>
             <div class="container-fluid d-flex flex-xl-row-reverse justify-content-xl-between flex-column my-xl-5 my-md-4 my-s-5 px-5 border-bottom" style="padding: 0 5vw 0 5vw">
-                <div class ="bloc_1 text-center mx-5">
-                    <img src="<?php echo base_url('assets/img/'.$i.'.jpg');?>" class="img-thumbnail" alt="" width="320px">
+                <div class ="bloc_1 text-center mx-5 py-5">
+                    <img src="<?php echo base_url('assets/img/'.$i.'.jpg');?>" class="img-fluid" alt="" width="320px">
                 </div>
-                <div class="bloc_2">
-                    <h2 class="fs-2 text-center pt-3"><?php echo $projectTitle[$i] ?></h2>
-                    <div class="fs-4 p-xl-4 p-md-3 p-s-2 p-xs-1 mx-lg-5 mx-md-3 mx-s-1">
+                <div class="bloc_2 my-s-3">
+                    <div class="fs-2 text-center pt-3">
+                        <?php echo $projectTitle[$i] ?>
+                    </div>
+                    <div class="fs-4 p-xl-4 p-md-3 p-s-2 mx-lg-5 mx-md-3 mx-s-1">
                     <?php echo $projectDesc[$i] ?>
                     </div>
                 <div class="d-flex flex-row justify-content-evenly m-5">
@@ -116,46 +118,52 @@
             <h2 class="fs-1 text-center fw-bold text-decoration-underline pb-4" id="contact">
                 Contact me
             </h2>
-            <div class="container-fluid d-flex flex-xl-row justify-content-xl-center flex-column" style="padding: 0 10vw 0 10vw">
-                <div class ="bloc_1 text-center">
-                    <div class="fs-2 text-center pt-3">
-                        <img src="<?php echo base_url('assets/ico/envelope.svg');?>" alt="" width="60vw" style="filter: invert(100%)">
+            <div class="container-fluid d-flex flex-xl-row flex-column justify-content-evenly" style="padding: 5vh 15vw 5vh 15vw">
+                <a href="mailto:<?php echo $email ?>" style="color: inherit; ">    
+                    <div class ="bloc_1 text-center pt-3">
+                        <div class="fs-2 text-center pt-3">
+                            <img src="<?php echo base_url('assets/ico/envelope.svg');?>" alt="" width="80vw" style="filter: invert(100%)">
+                        </div>
+                        <div class="p-xl-4 p-md-3 p-s-2 p-xs-1 mx-md-3 mx-s-1 pb-4">
+                            <?php echo $email ?>
+                        </div>
                     </div>
-                    <div class="p-xl-4 p-md-3 p-s-2 p-xs-1  mx-md-3 mx-s-1 pb-4">
-                        <a href="mailto:farhan.kzsr23@gmail.com" style="color: inherit;">farhan.kzsr23@gmail.com</a>
+                </a>
+                <a href="https://github.com/FrHaN23" target="_blank" rel="noopener noreferrer" style="color: inherit;">
+                    <div class ="bloc_2 text-center pt-3">
+                        <div class="fs-2 text-center pt-3">
+                            <img src="<?php echo base_url('assets/ico/github.svg');?>" alt="" width="80vw" style="filter: invert(100%)">
+                        </div>
+                        <div class="p-xl-4 p-md-3 p-s-2 p-xs-1 mx-md-3 mx-s-1 pb-4">
+                            FrHaN23
+                        </div>
                     </div>
-                </div>
-                <div class ="bloc_2 text-center ">
-                    <div class="fs-2 text-center pt-3">
-                        <img src="<?php echo base_url('assets/ico/github.svg');?>" alt="" width="80vw" style="filter: invert(100%)">
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer" style="color: inherit;">
+                    <div class ="bloc_1 text-center pt-3">
+                        <div class="fs-2 text-center pt-3">
+                            <img src="<?php echo base_url('assets/ico/telephone.svg');?>" alt="" width="80vw" style="filter: invert(100%)">
+                        </div>
+                        <div class="p-xl-4 p-md-3 p-s-2 p-xs-1 mx-lg-5 mx-md-3 mx-s-1 pb-4">
+                            Undisclosed
+                        </div>
                     </div>
-                    <div class="p-xl-4 p-md-3 p-s-2 p-xs-1 mx-md-3 mx-s-1 pb-4">
-                        <a href="https://github.com/FrHaN23" target="_blank" rel="noopener noreferrer" style="color: inherit;">FrHaN23</a>
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer" style="color: inherit;">
+                    <div class ="bloc_2 text-center pt-3">
+                        <div class="fs-2 text-center pt-3">
+                            <img src="<?php echo base_url('assets/ico/house.svg');?>" alt="" width="80vw" style="filter: invert(100%)">
+                        </div>
+                        <div class="p-xl-4 p-md-3 p-s-2 p-xs-1 mx-lg-5 mx-md-3 mx-s-1 pb-4">
+                            Undisclosed
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="container-fluid d-flex flex-xl-row justify-content-xl-center flex-column" style="padding: 0 10vw 0 10vw">
-                <div class ="bloc_1 text-center">
-                    <div class="fs-2 text-center pt-3">
-                        <img src="<?php echo base_url('assets/ico/telephone.svg');?>" alt="" width="80vw" style="filter: invert(100%)">
-                    </div>
-                    <div class="p-xl-4 p-md-3 p-s-2 p-xs-1 mx-lg-5 mx-md-3 mx-s-1 pb-4">
-                        Undisclosed
-                    </div>
-                </div>
-                <div class ="bloc_2 text-center ">
-                    <div class="fs-2 text-center pt-3">
-                        <img src="<?php echo base_url('assets/ico/house.svg');?>" alt="" width="80vw" style="filter: invert(100%)">
-                    </div>
-                    <div class="p-xl-4 p-md-3 p-s-2 p-xs-1 mx-lg-5 mx-md-3 mx-s-1 pb-4">
-                        Undisclosed
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
     
-    <footer class="d-flex flex-column fs-2" style="background: rgba(0, 0, 0, 0.89);">
+    <footer class="d-flex flex-column fs-2 pt-5" style="background: rgba(0, 0, 0, 0.89);">
         <div class="container-fluid d-flex flex-row justify-content-evenly pt-5 pb-5">
             <a href="https://web.facebook.com/farhan.kzsr" target="_blank" rel="noopener noreferrer">
                 <img src="<?php echo base_url('assets/ico/facebook.svg');?>" alt="" width="50vw" style="filter: invert(100%)">
@@ -165,9 +173,6 @@
             </a>
             <a href="https://www.instagram.com/frhankzsr/" target="_blank" rel="noopener noreferrer">
                 <img src="<?php echo base_url('assets/ico/instagram.svg');?>" alt="" width="50vw" style="filter: invert(100%)">
-            </a>
-            <a href="https://github.com/FrHaN23" target="_blank" rel="noopener noreferrer">
-                <img src="<?php echo base_url('assets/ico/github.svg');?>" alt="" width="50vw" style="filter: invert(100%)">
             </a>
         </div>
         <div class="d-flex flex-row justify-content-center my-5">
