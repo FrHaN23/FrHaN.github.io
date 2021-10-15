@@ -21,7 +21,6 @@
                     <a class="nav-link" href="#about">About</a>
                     <a class="nav-link" href="#project">Project</a>
                     <a class="nav-link" href="#contact">Contact</a>
-                    
                 </div>
             </div>
         </div>
@@ -31,17 +30,20 @@
             <h2 class="h-jumbotron">
                 Welcome to my profile
             </h2>
+            <?php 
+                $random = rand(0,count($quotesSource)-1)
+            ?>
             <p class="lead mt-2">
-                <?php echo $quotes?>
+                <?php echo $quotes[$random]?>
             </p>
             <figcaption class="blockquote-footer mt-1" style="color: white">
-                <?php echo $quotesSource?>
+                <?php echo $quotesSource[$random]?>
             </figcaption>
         </div>
     </div>
 
-    <div class="d-flex flex-column fs-2 pt-2 bg-dark">
-        <h2 class="fs-1 text-center fw-bold text-decoration-underline" id="about">About me</h2>
+    <div class="d-flex flex-column fs-2 pt-2 pt-xl-3 pb-xl-4 bg-dark">
+        <h2 class="fs-1 text-center fw-bold text-decoration-underline pt-xl-3" id="about">About me</h2>
         <p class="fs-5 mt-2 mx-5">
         <?php echo $about?>
         </p>
@@ -185,9 +187,25 @@
 
 <!-- load jquery js file -->
 <script src="<?php echo 
-base_url('assets/js/jquery.min.js');?>"></script>
+base_url('assets/js/jquery.min.js');?>">
+</script>
  <!-- load bootstrap js file -->
- <script src="<?php echo 
-base_url('assets/js/bootstrap.min.js');?>"></script>
+<script src="<?php echo 
+base_url('assets/js/bootstrap.min.js');?>">
+</script>
+<script>
+    $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
+    });
+    
+    $(document).click(function (event) {
+    var clickover = $(event.target);
+    var $navbar = $(".navbar-collapse");               
+    var _opened = $navbar.hasClass("show");
+    if (_opened === true && !clickover.hasClass("navbar-toggler")) {      
+        $navbar.collapse('hide');
+    }
+});
+</script>
 </body>
 </html>

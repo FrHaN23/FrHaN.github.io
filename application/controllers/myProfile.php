@@ -2,10 +2,34 @@
 
 class MyProfile extends CI_Controller{
     function index(){
-        $data["quotes"] = "There is no path. Beyond the 
-        scope of light, beyond the reach of Dark... 
-        what could possibly await us? And yet, we seek it, insatiably... Such is our fate.";
-        $data["quotesSource"] = "Aldia, Scholar of the First Sin";
+        $data["quotes"] = array(
+            "There is no path. Beyond the 
+            scope of light, beyond the reach of Dark... 
+            what could possibly await us? And yet, we seek it, insatiably... Such is our fate.",
+            "We all make choices in life, but in the end our choices make us.",
+            "What is better? To be born good or to overcome your evil nature through great effort?",
+            "It’s dangerous to go alone, take this!",
+            "You are here, and it’s beautiful, and escaping isn’t always something bad.",
+            "We both said a lot of things that you're going to regret. But I think we can put our differences behind us. For science. You monster.",
+            "No matter how dark the night, morning always comes, and our journey begins anew.",
+            "Stop right there, criminal scum!",
+            "YOU DIED",
+            "I used to be an adventurer like you until I took an arrow to the knee.",
+            "Finish Him!",
+        );
+        $data["quotesSource"] = array(
+            "Aldia, Scholar of the First Sin (Dark Souls 2)",
+            "Andrew Ryan (Bioshock)",
+            "Paarthurnax (The Elder Scroll V: Skyrim)",
+            "Old Man (The Legend of Zelda)",
+            "Delilah (Firewatch)",
+            "GLaDOS (Portal 2)",
+            "Lulu (Final Fantasy X)",
+            "Town Guard (The Elder Scrolls IV: Oblivion)",
+            "Dark Souls",
+            "Town Guard (The Elder Scrolls V: Skyrim)",
+            "Announcer (Mortal Kombat)"
+        );
         $data["about"] = "Hello there, my name is Muhamad Farhan, you can call me Farhan, I born in Palembang on 23 April 2001.
         Right now I going to State Polytechnic of Sriwijaya majoring in Informatics Management. I do progamming since 2018 
         starting with C and so on. I have experience with JavaScript, Visual Basic .NET, Dart, PHP, HTML, CSS, SQL, Non SQL, Git, and more,
