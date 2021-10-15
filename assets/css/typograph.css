@@ -3,6 +3,10 @@
     padding-top: 10%;
 }
 
+a{
+    text-decoration: none;
+}
+
 .lead{
     font-size: 2vw;
 }
@@ -29,8 +33,8 @@
 
 }
 .diamond-shape img{
-    max-width: 100%;
-    transform: rotate(-45deg) scale(1);
+    width: 100%;
+    transform: rotate(-45deg) scale(0.9);
 }
 
 @media (max-width: 900px) {
@@ -112,7 +116,9 @@
         margin-left: 20px;
         margin-right: 15px;
     }
-    
+    footer img{
+        width: 30px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -126,7 +132,10 @@
     .diamond-shape{
         width: 74px;
         margin-top: 20px;
-        margin-bottom: 15px;
-        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    footer img{
+        width: 30px;
     }
 }
+
