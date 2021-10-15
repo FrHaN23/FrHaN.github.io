@@ -36,15 +36,15 @@
         </div>
     </div>
 
-    <div class="d-flex flex-column fs-2 my-5">
+    <div class="d-flex flex-column fs-2 my-4 mb-5">
         <h2 class="fs-1 text-center fw-bold text-decoration-underline" id="about">About me</h2>
         <p class="fs-5 mt-2 mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eveniet recusandae, error nulla odit, culpa ut molestias labore repellendus ea a fugiat est voluptates ad quibusdam corrupti, itaque minima ipsam!</p>
     </div>
 
     <div class="d-flex flex-column justify-content-center" style="background-color:#208dbc">
     <div class="Container px-xl-5">
-        <div class="container-fluid my-5">
-            <h2 class="fs-1 text-center fw-bold text-decoration-underline" id="about">Personal Project</h2>
+        <div class="container-fluid my-4">
+            <h2 class="fs-1 text-center fw-bold text-decoration-underline pb-4" id="about">Personal Project</h2>
             <div class="container-fluid d-flex flex-xl-row justify-content-xl-between flex-column my-xl-5 my-md-4 my-s-5 px-5" style="padding: 0 5vw 0 5vw">
                 <div class ="bloc_1 text-center">
                     <img src="<?php echo base_url('assets/img/asmbly.png');?>" class="img-thumbnail" alt="" width="320px">
@@ -63,18 +63,17 @@
             </div>
             <div class="container-fluid d-flex flex-xl-row justify-content-xl-between flex-column my-3 px-5" style="padding: 0 5vw 0 5vw">
                 <div class ="bloc_1 text-center">
-                
-                <img src="<?php echo base_url('assets/img/asmbly.png');?>" class="img-thumbnail" alt="" width="320px">
-                     
+                    <img src="<?php echo base_url('assets/img/asmbly.png');?>" class="img-thumbnail" alt="" width="320px">
                 </div>
                 <div class="bloc_2">
-                <h2 class="fs-2 text-center pt-3">ABC</h2>
-                <div class="p-xl-4 p-md-3 p-s-2 p-xs-1 mx-lg-5 mx-md-3 mx-s-1">
+                    <h2 class="fs-2 text-center pt-3">ABC</h2>
+                    <div class="p-xl-4 p-md-3 p-s-2 p-xs-1 mx-lg-5 mx-md-3 mx-s-1">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod porro molestiae necessitatibus maxime minima aliquid doloremque voluptatem? Corrupti, labore molestiae est aut exercitationem fuga libero consequuntur ut cupiditate quo cum.
-                     </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     
 
