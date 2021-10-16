@@ -48,18 +48,13 @@
         <?php echo $about?>
         </p>
         <div class="d-flex flex-row justify-content-evenly">
-            <div class="diamond-shape">
-                <img src="<?php echo base_url('assets/img/javascript.png');?>" alt="">
-            </div>
-            <div class="diamond-shape">
-                <img src="<?php echo base_url('assets/img/flutter.png');?>" alt="">
-            </div>
-            <div class="diamond-shape">
-                <img src="<?php echo base_url('assets/img/html.png');?>" alt="">
-            </div>
-            <div class="diamond-shape">
-                <img src="<?php echo base_url('assets/img/dotnet.png');?>" alt="">
-            </div>
+            <?php for($i=0;$i<count($icoLang);$i++){ ?>
+            <a href=" <?php echo $icoLink[$i] ?>" target="_BLANK">
+                <div class="diamond-shape">
+                    <img src="<?php echo base_url('assets/img/'.$icoLang[$i]);?>" alt="">
+                </div>
+            </a>
+            <?php } ?>
         </div>
     </div>
 
@@ -97,9 +92,9 @@
                     <img src="<?php echo base_url('assets/img/'.$i.'.jpg');?>" class="img-fluid" alt="" width="320px">
                 </div>
                 <div class="bloc_2 my-s-3">
-                    <div class="fs-2 text-center pt-3">
+                    <h2 class="fs-2 text-center pt-3">
                         <?php echo $projectTitle[$i] ?>
-                    </div>
+                    </h2>
                     <div class="fs-4 p-xl-4 p-md-3 p-s-2 mx-lg-5 mx-md-3 mx-s-1">
                     <?php echo $projectDesc[$i] ?>
                     </div>
@@ -160,7 +155,6 @@
                             Undisclosed
                         </div>
                     </div>
-
             </div>
         </div>
     </div>
@@ -179,7 +173,7 @@
         </div>
         <div class="d-flex flex-row justify-content-center my-5">
             <p class="lead text-center" style="font-size: 15px;">
-                All rights reserved &#169; Muhamad Farhan | Built using <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap 5</a> 
+                All rights reserved &#169; 2021 Muhamad Farhan | Built using <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap 5</a> 
             </p>
         </div>
     </footer>
@@ -199,9 +193,9 @@ base_url('assets/js/bootstrap.min.js');?>">
     });
 
     $(document).click(function (event) {
-    var clickover = $(event.target);
-    var $navbar = $(".navbar-collapse");               
-    var _opened = $navbar.hasClass("show");
+    let clickover = $(event.target);
+    let $navbar = $(".navbar-collapse");               
+    let _opened = $navbar.hasClass("show");
     if (_opened === true && !clickover.hasClass("navbar-toggler")) {      
         $navbar.collapse('hide');
     }

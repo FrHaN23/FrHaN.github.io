@@ -6,6 +6,9 @@
 a{
     text-decoration: none;
 }
+a:hover{
+    color: blueviolet;
+}
 
 .lead{
     font-size: 2vw;
@@ -19,6 +22,10 @@ a{
 
 .about p{
     font-size: 12px;
+    
+}
+h2{
+    font-family: Luminari,;
 }
 
 .diamond-shape{
@@ -44,6 +51,7 @@ a{
     .lead{
         font-size: 3vw;
     }
+
     .diamond-shape{
         width: 150px;
         margin-bottom: 25px;

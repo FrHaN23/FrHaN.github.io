@@ -50,6 +50,20 @@ class MyProfile extends CI_Controller{
             "Penjualan Sederhana is an app that inspire from complex Point-of-Sales (POS) and we built this with simplicity in mind. this app built using Visual Basic .NET and Ms. Access",
             "Simple Student Management is an app that to manage student data, using simple (near nonexistent) UI and with help Ms. Access database for ease use. this app built using Visual Basic .NET and Ms. Access");
         $data["email"] = "farhan.kzsr23@gmail.com";
+        $data["icoLang"] = array(
+            "javascript.png",
+            "flutter.png",
+            "html.png",
+            "dotnet.png",
+        );
+        $data["icoLink"] = array(
+            "https://www.javascript.com/",
+            "https://flutter.dev/",
+            "https://html.spec.whatwg.org/",
+            "https://dotnet.microsoft.com/"
+
+        );
+
         $this->load->view('myprofile-view',$data);
     }
 }
