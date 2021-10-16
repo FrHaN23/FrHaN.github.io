@@ -9,8 +9,8 @@
     <title>The Profile</title>
 </head>
 <body class="bg-dark text-white" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" style="background-image: url(<?php echo base_url('assets/img/jumbotron.png');?>); background-size:cover; background-attachment:fixed;" >
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #504f4ffa;">
-        <div class="container-fluid">
+    <nav class="autohide navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #504f4ffa;" id="navigation">
+        <div class="container-fluid mx-xl-5">
             <a class="navbar-brand" href="#home">FrHaN | Profile</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,6 +24,7 @@
                 </div>
             </div>
         </div>
+        
     </nav>
     <div class="bg-image img-fluid shadow-1-string text-left text-white pl-5 " style="height: 80vh; background-size:cover" id="home">
         <div class= "p-5 text-lg-fs2" style="background: rgba(0,0,0,0.3); background-size:cover; height:80vh; flex-direction:column;">
@@ -58,8 +59,6 @@
         </div>
     </div>
 
-
-
     <div class="d-flex flex-column justify-content-center" style="background-color:#208dbc">
     <div class="Container px-xl-5">
         <div class="container-fluid my-4">
@@ -70,7 +69,7 @@
             ?>
             <div class="container-fluid d-flex flex-xl-row justify-content-xl-between flex-column my-xl-5 my-md-4 my-s-5 px-5 border-bottom" style="padding: 0 5vw 0 5vw">
                 <div class ="bloc_1 text-center mx-5 py-5">
-                    <img src="<?php echo base_url('assets/img/'.$i.'.jpg' );?>" class="img-fluid" alt="" width="220px">
+                    <img src="<?php echo base_url('assets/img/'.$i.'.jpg' );?>" class="img-fluid" alt="" width="220px" style="">
                 </div>
                 <div class="bloc_2 my-s-3">
                     <h2 class="fs-2 text-center pt-3">
@@ -179,27 +178,8 @@
     </footer>
 
 
-<!-- load jquery js file -->
-<script src="<?php echo 
-base_url('assets/js/jquery.min.js');?>">
-</script>
- <!-- load bootstrap js file -->
-<script src="<?php echo 
-base_url('assets/js/bootstrap.min.js');?>">
-</script>
-<script>
-    $('.navbar-collapse a').click(function(){
-        $(".navbar-collapse").collapse('hide');
-    });
-
-    $(document).click(function (event) {
-    let clickover = $(event.target);
-    let $navbar = $(".navbar-collapse");               
-    let _opened = $navbar.hasClass("show");
-    if (_opened === true && !clickover.hasClass("navbar-toggler")) {      
-        $navbar.collapse('hide');
-    }
-});
-</script>
+<script src="<?php echo base_url('assets/js/jquery.min.js');?>"></script>
+<script src="<?php echo base_url('assets/js/bootstrap.min.js');?>"></script>
+<script src="<?php echo base_url('assets/js/scripts.js');?>"></script>
 </body>
 </html>
