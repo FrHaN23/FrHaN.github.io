@@ -26,8 +26,8 @@
         </div>
         
     </nav>
-    <div class="bg-image img-fluid shadow-1-string text-left text-white pl-5 " style="height: 80vh; background-size:cover" id="home">
-        <div class= "p-5 text-lg-fs2" style="background: rgba(0,0,0,0.3); background-size:cover; height:80vh; flex-direction:column;">
+    <div class="bg-image img-fluid shadow-1-string text-left text-white pl-5 " style="height: 90vh; background-size:cover" id="home">
+        <div class= "p-5 text-lg-fs2" style="background: rgba(0,0,0,0.3); background-size:cover; height:90vh; flex-direction:column;">
             <h2 class="h-jumbotron">
                 Welcome to my profile
             </h2>
